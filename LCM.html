@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LCM</title>
+</head>
+<script>
+    function f() {
+        x = parseInt(document.getElementById("textbox1").value);
+        y = parseInt(document.getElementById("textbox2").value);
+
+        for (var i = 1; i <= x * y; i++) {
+            if (i % x == 0 && i % y == 0) {
+                break;
+            }
+        }
+        document.getElementById("result").value = i;
+    }
+</script>
+
+<body>
+    <input type="text" id="textbox1" placeholder="Enter the First Number">
+    <br>
+    <br>
+    <input type="text" id="textbox2" placeholder="Enter the First Number">
+    <br>
+    <br>
+    <input type="button" onclick="f()" value="LCM">
+    <br>
+    <br>
+    <input type="text" id="result" placeholder="The Result is">
+</body>
+
+</html>

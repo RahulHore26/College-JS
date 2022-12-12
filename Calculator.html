@@ -1,0 +1,51 @@
+<html>
+
+<head>
+    <title>Calculator</title>
+    <script>
+        function f(c) {
+            let x = parseInt(document.getElementById("Calculator1").value);
+            let y = parseInt(document.getElementById("Calculator2").value);
+            switch (c) {
+                case "+":
+                    z = x + y;
+                    break;
+
+                case "-":
+                    z = x - y;
+                    break;
+
+                case "*":
+                    z = x * y;
+                    break;
+
+                case "/":
+                    z = x / y;
+                    break;
+                default:
+                    document.getElementById("result").value = "Input Any Number";
+            }
+            document.getElementById("result").value = z;
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <input type="text" id="Calculator1" placeholder="Enter First Number">
+        <br>
+        <br>
+        <input type="text" id="Calculator2" placeholder="Enter Second Number">
+        <br>
+        <br>
+        <input type="button" value="+" onclick="f('+')">
+        <input type="button" value="-" onclick="f('-')">
+        <input type="button" value="*" onclick="f('*')">
+        <input type="button" value="/" onclick="f('/')">
+        <br>
+        <br>
+        <input type="text" id="result" placeholder="The Result is">
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math.pow</title>
+    <style>
+        table,th,td {
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        let n = parseInt(prompt("Enter a number"));
+        let i = parseInt(prompt("Enter the power"));
+        let ans = Math.pow(n,i);
+
+        document.write('<table>');
+            document.write('<tr>');
+                document.write('<th>' + "Number" + '</th>');
+                document.write('<th>' + "Power" + '</th>');
+                document.write('<th>' + "Answer" + '</th>');
+            document.write('</tr>');
+
+            document.write('<tr>');
+                document.write('<th>' + n + '</th>');
+                document.write('<th>' + i + '</th>');
+                document.write('<th>' + ans + '</th>');
+            document.write('</tr>');
+        document.write('</table>');
+    </script>
+</body>
+</html>

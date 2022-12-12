@@ -1,0 +1,24 @@
+<html>
+
+<head>
+    <title>OddEven</title>
+    <script>
+        function f() {
+            let x = parseInt(document.getElementById("OddEven").value);
+            if (x & 1) {
+                document.write(x + " is a Odd Number")
+            } else {
+                document.write(x + " is a Even Number")
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <input type="text" id="OddEven" placeholder="Enter a number">
+    <br>
+    <br>
+    <input type="button" value="Check" onclick="f()">
+</body>
+
+</html>

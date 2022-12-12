@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triangle_Area_Perimeter</title>
+    <style>
+        table,th,td {
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        let a = parseInt(prompt("Enter the First side of a Triangle"));
+        let b = parseInt(prompt("Enter the Second side of a Triangle"));
+        let c = parseInt(prompt("Enter the Third side of a Triangle"));
+
+        let P = a + b + c;
+        let s = P / 2;
+        let A = Math.sqrt(s * (s - a) * (s - b) * (s - c));
+
+        document.write('<table>');
+        document.write('<tr>');
+        document.write('<th>' + "First side of the Triangle" + '</th>');
+        document.write('<th>' + "Second side of the Triangle" + '</th>');
+        document.write('<th>' + "Third side of the Triangle" + '</th>');
+        document.write('<th>' + "Area of the Triangle" + '</th>');
+        document.write('<th>' + "Perimeter of the Triangle" + '</th>');
+        document.write('</tr>');
+
+        document.write('<tr>');
+        document.write('<th>' + a + '</th>');
+        document.write('<th>' + b + '</th>');
+        document.write('<th>' + c + '</th>');
+        document.write('<th>' + A + '</th>');
+        document.write('<th>' + P + '</th>');
+        document.write('</tr>');
+        document.write('</table>');
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown</title>
+</head>
+<script>
+    function f() {
+
+        name = document.getElementById("name").value;
+        Semester = document.getElementById("sem").value;
+        document.write("Name : "+name + "<br>Semester : " + Semester);
+    }
+</script>
+
+<body>
+    Name : <input type="text" id="name" placeholder="Enter Your Name">
+    <br>
+    <br>
+    Semester :
+    <select id="sem">
+        <option value="value" selected>Select Your Semester</option>
+        <option value="1st Semester">1st Semester</option>
+        <option value="2nd Semester">2nd Semester</option>
+        <option value="3rd Semester">3rd Semester</option>
+        <option value="4th Semester">4th Semester</option>
+        <option value="5th Semester">5th Semester</option>
+        <option value="6th Semester">6th Semester</option>
+    </select>
+    <br>
+    <br>
+    <input type="button" onclick="f()" id="name" value="Submit">
+</body>
+
+</html>

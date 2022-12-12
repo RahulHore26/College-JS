@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semester</title>
+</head>
+<script>
+    function f() {
+
+        name = document.getElementById("name").value;
+        roll = document.getElementById("roll").value;
+        x = document.getElementsByName("sub");
+        y = document.getElementsByName("sem");
+        
+        for (var i = 0; i < x.length; i++) {
+            if (x[i].checked) {
+                sub = x[i].value;
+            }
+        }
+        for (var i = 0; i < y.length; i++) {
+            if (y[i].checked) {
+                sem = y[i].value;
+            }
+        }
+        document.write("Name : " + name + "<br> Roll No. " + roll + "<br> Subject : " + sub + "<br> Semester : " + sem);
+    }
+</script>
+
+<body>
+    Name : <input type="text" id="name" placeholder="Enter Your Name">
+    <br>
+    <br>
+    Roll No : <input type="text" id="roll" placeholder="Enter Your Roll No.">
+    <br>
+    <br>
+    Subject :
+    <input type="radio" name="sub" value="B.A.">B.A.
+    <input type="radio" name="sub" value="B.Sc.">B.Sc.
+    <input type="radio" name="sub" value="B.Com.">B.Com.
+    <br>
+    <br>
+    Semester:
+    <input type="radio" name="sem" value="1st">One
+    <input type="radio" name="sem" value="2nd">Two
+    <input type="radio" name="sem" value="3rd">Three
+    <input type="radio" name="sem" value="4th">Four
+    <input type="radio" name="sem" value="5th">Five
+    <input type="radio" name="sem" value="6th">Six
+    <br>
+    <br>
+    <input type="button" onclick="f()" id="name" value="Submit">
+</body>
+
+</html>

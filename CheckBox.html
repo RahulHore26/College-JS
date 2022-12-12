@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CheckBox</title>
+</head>
+<script>
+    function f() {
+
+        name = document.getElementById("name").value;
+        x = document.getElementsByName("Employment");
+        y = document.getElementsByName("Skills");
+
+        for (var i = 0; i < x.length; i++) {
+            if (x[i].checked) {
+                Employement = x[i].value;
+            }
+        }
+        var Skills = "";
+        for (var i = 0; i < y.length; i++) {
+            if (y[i].checked) {
+                Skills = Skills + " " + y[i].value;
+            }
+        }
+        document.write(name + " is " + Employement + " with skillset : " + Skills);
+    }
+</script>
+
+<body>
+    Name : <input type="text" id="name" placeholder="Enter Your Name">
+    <br>
+    <br>
+    Employment :<br>
+    <input type="radio" name="Employment" value="Employed">Employed<br>
+    <input type="radio" name="Employment" value="UnEmployed">UnEmployed<br>
+    <br>
+    <br>
+    Skills :<br>
+    <input type="checkbox" name="Skills" value="C">C<br>
+    <input type="checkbox" name="Skills" value="C++">C++<br>
+    <input type="checkbox" name="Skills" value="Java">Java<br>
+    <input type="checkbox" name="Skills" value="Python">Python<br>
+    <br>
+    <br>
+    <input type="button" onclick="f()" id="name" value="Submit">
+</body>
+
+</html>

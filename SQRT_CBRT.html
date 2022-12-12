@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Square Root and Cube Root</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        let n = parseInt(prompt("Enter a number"));
+        let s = Math.sqrt(n);
+        let c = Math.cbrt(n);
+
+        document.write('<table>');
+            document.write('<tr>');
+                document.write('<th>' + "Number" + '</th>');
+                document.write('<th>' + "SQRT" + '</th>');
+                document.write('<th>' + "CBRT" + '</th>');
+            document.write('</tr>');
+
+            document.write('<tr>');
+                document.write('<th>' + n + '</th>');
+                document.write('<th>' + s + '</th>');
+                document.write('<th>' + c + '</th>');
+            document.write('</tr>');
+        document.write('</table>');
+
+    </script>
+</body>
+
+</html>

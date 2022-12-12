@@ -1,0 +1,23 @@
+<html>
+
+<head>
+    <title>Copy</title>
+    <script>
+        function f() {
+            let x = document.getElementById("Copy").value;
+            document.getElementById("Copy1").value = x;
+        }
+    </script>
+</head>
+
+<body>
+    <input type="text" id="Copy" placeholder="Enter Something">
+    <br>
+    <br>
+    <input type="button" value="Copy" onclick="f()">
+    <br>
+    <br>
+    <input type="text" id="Copy1">
+</body>
+
+</html>
