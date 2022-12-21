@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IndexOf function</title>
+</head>
+<script>
+    function check() {
+        x = document.getElementById("input").value;
+        y = document.getElementById("index").value;
+        b = x.indexOf(y);
+        document.write(b);
+    }
+</script>
+
+<body>
+    <label><b>Input : </b></label>
+    <input type="text" id="input" placeholder="Enter a Text">
+    <br><br>
+    <label><b>Index : </b></label>
+    <input type="text" id="index" placeholder="Enter a index">
+    <br><br>
+    <button onclick="check()">Check</button>
+</body>
+
+</html>
