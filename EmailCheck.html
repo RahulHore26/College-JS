@@ -10,11 +10,14 @@
 <script>
     function check() {
         x = document.getElementById("email").value;
-        if ((x.indexOf("@")) && (x.indexOf(".")) != -1) {
-            document.write("Email : " + x);
+        if (x.indexOf("@") == -1) {
+            alert("@ is not given");
+        }
+        else if (x.indexOf(".") == -1) {
+            alert(" . is not given");
         }
         else {
-            alert("'@' or '.' is not given");
+            document.write("Email is : " + x);
         }
     }
 </script>
